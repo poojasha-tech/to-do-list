@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "to-list_App",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "to-list_App"
+	}
+}

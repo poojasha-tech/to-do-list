@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#a61717);
+    padding: 10px;
+
+
+}
+.todo-list{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+}
+.todo-list h2{
+    color: #615454;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.todo-list h2 img{
+    width: 40px;
+    margin-left: 10px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eae4e4;
+    border-radius: 30px;
+    padding-left: 2opx;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 20px;
+    text-align: center;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 20px 50px;
+    background: #9b9bf6;
+    color: #201e1e;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style:none;
+    font-size: 18px;
+    padding: 12px 10px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+ul li::before{
+    content:'';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ ul li.checked{
+    color: #767272;
+    text-decoration: line-through;
+
+ }
+
+ ul li.checked::before{
+    background-image: url(images/checked.png);
+ }
+
+ ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #978d8d;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+ }
+
+ul li span:hover{
+    background: #d4d1d1;
+
+
+}
